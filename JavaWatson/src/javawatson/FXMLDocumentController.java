@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javawatsonui;
+package javawatson;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,16 +17,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.io.BufferedReader;
-import java.util.List;
-import com.google.gson.*;
-import java.awt.event.MouseEvent;
-import java.io.Reader;
-import java.net.URLEncoder;
 import java.util.HashMap;
-import static javawatsonui.googleSearch.getStuff;
 
 /**
  *
