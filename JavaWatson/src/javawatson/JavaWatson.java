@@ -77,7 +77,7 @@ public class JavaWatson {
 
    
     public static void main(String[] args) throws IOException {
-    	HashSet<String> inventory = checkInventory("food_database.csv","../../foods.zip");
+    	//HashSet<String> inventory = checkInventory("food_database.csv","../../foods.zip");
     	System.out.print(inventory);
     }
 }
