@@ -21,7 +21,7 @@ import java.util.*;
 
 public class JavaWatson {
 	
-	private static HashSet<String> database = null;
+	public static HashSet<String> database = null;
 	
 	public static HashSet<String> createDatabase(String filepath) throws IOException{
 		
@@ -42,19 +42,18 @@ public class JavaWatson {
 	public static Boolean classInDatabase(String className) {
 		return database.contains(className.toLowerCase());
 	}
-
-   
-    public static void main(String[] args) throws IOException {
-    	
-        VisualRecognition service = new VisualRecognition(
+	
+	public static HashSet<String> checkInventory(String db_filepath, String img_filepath) throws IOException{
+		
+		VisualRecognition service = new VisualRecognition(
                 VisualRecognition.VERSION_DATE_2016_05_20);
-        service.setApiKey("6d8ae2d1e70c9b289744d8520aa06de8e6737972");
+        service.setApiKey("8d7aced8efa9ce11cca985d203dce5989cc20148");
         service.setEndPoint("https://gateway-a.watsonplatform.net/visual-recognition/api");
         
-        createDatabase("food_database.csv");
+        createDatabase(db_filepath);
         HashSet<String> food_in_fridge = new HashSet<>();
 
-        InputStream imagesStream = new FileInputStream("../../foods.zip");
+        InputStream imagesStream = new FileInputStream(img_filepath);
         ClassifyOptions classifyOptions = new ClassifyOptions.Builder()
                 .imagesFile(imagesStream)
                 .imagesFilename("tester image")
@@ -73,7 +72,13 @@ public class JavaWatson {
             }
         }
         
-        System.out.println(food_in_fridge);
-        }
+        return food_in_fridge;
     }
+
+   
+    public static void main(String[] args) throws IOException {
+    	HashSet<String> inventory = checkInventory("food_database.csv","../../foods.zip");
+    	System.out.print(inventory);
+    }
+}
 
