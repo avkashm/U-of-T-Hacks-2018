@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaWatsonUI.jnlp">
+  <information>
+    <title>JavaWatsonUI</title>
+    <vendor>KhaledKhalil</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaWatsonUI.jar" size="9456" download="eager" />
+    <jar href="lib/gson-2.8.0-javadoc.jar" size="261988" download="eager" />
+    <jar href="lib/gson-2.8.0-sources.jar" size="146908" download="eager" />
+    <jar href="lib/gson-2.8.0.jar" size="231952" download="eager" />
+    <jar href="lib/java-sdk-4.2.1-jar-with-dependencies.jar" size="2449833" download="eager" />
+    <jar href="lib/jsoup-1.11.2-javadoc.jar" size="1138732" download="eager" />
+    <jar href="lib/jsoup-1.11.2-sources.jar" size="181529" download="eager" />
+    <jar href="lib/jsoup-1.11.2.jar" size="392350" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaWatsonUI" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="javawatsonui.JavaWatsonUI"  name="JavaWatsonUI" />
+  <update check="always"/>
+</jnlp>

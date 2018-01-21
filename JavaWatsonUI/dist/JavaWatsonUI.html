@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'JavaWatsonUI.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJKYXZhV2F0c29uVUkuam5scCI+CiAgPGluZm9ybWF0aW9uPgogICAgPHRpdGxlPkphdmFXYXRzb25VSTwvdGl0bGU+CiAgICA8dmVuZG9yPktoYWxlZEtoYWxpbDwvdmVuZG9yPgogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPgogICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgPC9pbmZvcm1hdGlvbj4KICA8cmVzb3VyY2VzPgogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPgogICAgPGphciBocmVmPSJKYXZhV2F0c29uVUkuamFyIiBzaXplPSI5NDU2IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9nc29uLTIuOC4wLWphdmFkb2MuamFyIiBzaXplPSIyNjE5ODgiIGRvd25sb2FkPSJlYWdlciIgLz4KICAgIDxqYXIgaHJlZj0ibGliL2dzb24tMi44LjAtc291cmNlcy5qYXIiIHNpemU9IjE0NjkwOCIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvZ3Nvbi0yLjguMC5qYXIiIHNpemU9IjIzMTk1MiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvamF2YS1zZGstNC4yLjEtamFyLXdpdGgtZGVwZW5kZW5jaWVzLmphciIgc2l6ZT0iMjQ0OTgzMyIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvanNvdXAtMS4xMS4yLWphdmFkb2MuamFyIiBzaXplPSIxMTM4NzMyIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9qc291cC0xLjExLjItc291cmNlcy5qYXIiIHNpemU9IjE4MTUyOSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvanNvdXAtMS4xMS4yLmphciIgc2l6ZT0iMzkyMzUwIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgPC9yZXNvdXJjZXM+CiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJKYXZhV2F0c29uVUkiID4KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4KICA8L2FwcGxldC1kZXNjPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJqYXZhd2F0c29udWkuSmF2YVdhdHNvblVJIiAgbmFtZT0iSmF2YVdhdHNvblVJIiAvPgogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgo8L2pubHA+Cg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedjavawatsonui() {
+        dtjava.embed(
+            {
+                id : 'javawatsonui',
+                url : 'JavaWatsonUI.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJKYXZhV2F0c29uVUkuam5scCI+CiAgPGluZm9ybWF0aW9uPgogICAgPHRpdGxlPkphdmFXYXRzb25VSTwvdGl0bGU+CiAgICA8dmVuZG9yPktoYWxlZEtoYWxpbDwvdmVuZG9yPgogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPgogICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgPC9pbmZvcm1hdGlvbj4KICA8cmVzb3VyY2VzPgogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPgogICAgPGphciBocmVmPSJKYXZhV2F0c29uVUkuamFyIiBzaXplPSI5NDU2IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9nc29uLTIuOC4wLWphdmFkb2MuamFyIiBzaXplPSIyNjE5ODgiIGRvd25sb2FkPSJlYWdlciIgLz4KICAgIDxqYXIgaHJlZj0ibGliL2dzb24tMi44LjAtc291cmNlcy5qYXIiIHNpemU9IjE0NjkwOCIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvZ3Nvbi0yLjguMC5qYXIiIHNpemU9IjIzMTk1MiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvamF2YS1zZGstNC4yLjEtamFyLXdpdGgtZGVwZW5kZW5jaWVzLmphciIgc2l6ZT0iMjQ0OTgzMyIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvanNvdXAtMS4xMS4yLWphdmFkb2MuamFyIiBzaXplPSIxMTM4NzMyIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9qc291cC0xLjExLjItc291cmNlcy5qYXIiIHNpemU9IjE4MTUyOSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvanNvdXAtMS4xMS4yLmphciIgc2l6ZT0iMzkyMzUwIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgPC9yZXNvdXJjZXM+CiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJKYXZhV2F0c29uVUkiID4KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4KICA8L2FwcGxldC1kZXNjPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJqYXZhd2F0c29udWkuSmF2YVdhdHNvblVJIiAgbmFtZT0iSmF2YVdhdHNvblVJIiAvPgogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgo8L2pubHA+Cg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedjavawatsonui);
+</script>
+
+</head><body>
+<h2>Test page for <b>JavaWatsonUI</b></h2>
+  <b>Webstart:</b> <a href='JavaWatsonUI.jnlp' onclick="return launchApplication('JavaWatsonUI.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
